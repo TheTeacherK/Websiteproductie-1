@@ -1,0 +1,13 @@
+div{
+  background-color: rgb(163, 224, 62);
+  margin-left: 20px;
+  padding:10px;
+  border: green 10px solid;
+  width: 600px;
+}
+
+
+.FotoBox{
+  width: 300px;
+  margin-left: 150px;
+}
