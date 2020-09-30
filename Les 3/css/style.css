@@ -1,0 +1,106 @@
+/*reset general*/
+*,html {text-decoration:none; list-style:none; padding:0; margin: 0; outline:none; font-family: Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif; font-size: 16px; text-align: left; line-height: 1.6; color: #335859;}
+
+/*bigstuff*/
+body
+{
+display: grid;
+grid-gap: 5em;
+/* https://www.w3schools.com/cssref/css_units.asp units in css */
+
+grid-template-columns: repeat(5, 1fr);
+/* repeat verkot de notatie  1fr 1fr 1fr 1fr 1fr */
+grid-template-rows: repeat(5, auto);
+}
+
+
+
+pre-header {grid-row: 1 / 2; grid-column: 2 / 5; }
+
+header {grid-row: 2 / 3; grid-column: 2 / 5; }
+
+main {grid-row: 3 / 4; grid-column: 2 / 5; display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 1em; }
+
+
+
+/*nav*/
+nav ul {display: grid; grid-gap:1em; grid-template-columns: repeat(3, 1fr);}
+nav ul li a {height: 70px; display: block; line-height: 70px; padding: 20px; text-align: center; }
+
+/*pictures*/
+img {width: 100%}
+
+/*fonts*/
+h1 {font-size: 170%;}
+h2 {font-size: 150%;}
+nav ul li a {font-size: 130%;}
+
+/*color*/
+nav ul li a {background-color: #ffff55;}
+nav ul li a:hover {color: white; background-color: #55ffff;}
+
+
+footer{
+	background-color: #0a0a0a;
+
+	padding:10px;
+	grid-row: 4; grid-column: 2 / 5; display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 1em;
+ }
+
+ /* opmaak social logo */
+
+ .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+ .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+/*fix mobile*/
+@media (max-width: 600px) {
+	body {display: block;}
+	nav ul  {grid-template-columns: 1fr;}
+	  nav ul li a {height: 20px; display: block; line-height: 10px; padding: 10px; text-align: center;}
+
+/* sections onder elkaar */
+main {grid-template-columns: 1fr; padding: 15px;}
+/*opmaak*/
+#shop {background-color: #55ffff; 	padding: 0.5em; }
+#nieuws {background-color: #55ffff; 	padding: 0.5em;}
+
+footer{grid-template-columns: 1fr; padding: 15px;}
+
+}
