@@ -27,26 +27,30 @@ nav {
     width: 40px;
   }
 
-
+/* verbergen van zowel het icoon burger menu als het aanvink vakje*/
  #nav-toggle, .burger-menu {
      display:none;
    }
 
-
+/*opmaak mobile */
 	 @media only screen and (max-width: 1025px) {
+
+		 /* weergeven burger icoon */
 	    .burger-menu {
 	      display: inline-block;
 	    }
 
+/* orginele menu verbergen*/
 	    .left-menu {
 	      display: none;
 	    }
 
+/* de checkbox aanzetten -  geeft het orginele menu weer in nieuwe grid zetten */
 	    #nav-toggle:checked ~ .left-menu {
 	      display: grid;
 	      grid-row: 2;
 	    }
-	  }
+
 
 
 /* ------------------------------------------------------------ */
