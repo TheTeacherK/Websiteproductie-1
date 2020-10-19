@@ -14,7 +14,8 @@
 
 
 
-		<form method="post" action="">
+		<form method="post" action="mailto:gebruiker@provider.nl?SUBJECT=Reactie" ENCTYPE="text/plain" id="form1">
+
 		    <div>
 		        <label for="voornaam">Voornaam:</label>
 		        <input id="voornaam" name="voornaam" /><br />
@@ -38,8 +39,9 @@
 		        <textarea id="bericht" name="bericht" cols="30" rows="4"></textarea>
 
 		        <label>&nbsp;</label>
-		        <input type="button" value="verstuur" />&nbsp;<input type="reset" value="reset" />
+						<button type="submit" form="form1" value="Verzenden">Verzenden</button>  &nbsp;<input type="reset" value="reset" />
 		    </div>
+				
 		</form>
 
 
