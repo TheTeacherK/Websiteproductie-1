@@ -1,0 +1,105 @@
+
+
+form
+    {
+    border-width: 1px;
+    border-style: dashed;
+    border-color: #cccccc;
+
+    padding: 15px;
+    width: 350px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    }
+
+
+/*
+Eerst geven we de form tag standaard opmaak mee.
+Ik geef hem een breedte van 350 pixels, 15 pixels padding aan alle kanten,
+een kleine Arial als lettertype en een dunne grijze streepjes border eromheen.
+*/
+
+
+label
+    {
+    float: left;
+    width: 75px;
+    text-align: right;
+
+    margin-right: 15px;
+    }
+/*
+Dan maken we het label op. Omdat we willen dat het label links van de input tags komt te staan,
+geven hem float: left; mee. En een absolute breedte, in mijn geval is dat 75 pixels.
+Verder geef ik aan dat de tekst rechts uitgelijnd moet worden,
+en dat er tussen het label en het inputveld 15 pixels marge moet zitten.
+*/
+
+
+
+input
+    {
+    background-color: #f5f5f5;
+
+    font-size: x-small;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: #cccccc;
+
+    margin-bottom: 10px;
+    }
+/*
+Dan de opmaak van een inputveld. Een achtergrondkleurtje,
+font grootte, solide dunne grijze border eromheen en wat ruimte onderaan
+zodat ze niet tegen elkaar plakken.
+*/
+
+
+select
+{
+width: 120px;
+font-size: x-small;
+background-color: #f5f5f5;
+
+border-color: #cccccc;
+border-style: solid;
+border-width: 1px;
+
+margin-bottom: 10px;
+}
+
+
+/*
+Ook nog een aparte opmaak voor de select box.
+ In principe gelijk aan de opmaak van de input box,
+  behalve dat ik deze een absolute breedte meegeef (120 pixels,
+   in dit geval even breed als de text inputvelden).
+*/
+
+
+textarea
+    {
+    width: 250px;
+    height: 100px;
+    background-color: #f5f5f5;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: #cccccc;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+
+    margin-bottom: 10px;
+    }
+
+
+/*
+En ook nog eens voor de textarea.
+Ik geef hem absolute afmetingen mee,
+Net als de andere inputboxjes een achtergrondkleur en een border.
+Een textarea kan je ook een lettertype meegeven (input trouwens ook),
+wat vaak mooier is dan de standaard courier new.
+*/
