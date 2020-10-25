@@ -1,0 +1,131 @@
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="CSS/style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+ <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+ <script>
+ //Get the button
+ var mybutton = document.getElementById("myBtn");
+
+ // When the user scrolls down 20px from the top of the document, show the button
+ window.onscroll = function() {scrollFunction()};
+
+ function scrollFunction() {
+   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+     mybutton.style.display = "block";
+   } else {
+     mybutton.style.display = "none";
+   }
+ }
+
+ // When the user clicks on the button, scroll to the top of the document
+ function topFunction() {
+   document.body.scrollTop = 0;
+   document.documentElement.scrollTop = 0;
+ }
+ </script>
+
+<header>
+
+
+  <div class="nav-container">
+    <nav>
+      <input type="checkbox" id="nav-toggle">
+      <label for="nav-toggle" class="burger-menu">
+        <img src="img/Menu.png" alt="">
+      </label>
+
+      <div class="left-menu">
+          <a href="#info">Info</a>
+          <a href="#foto">Foto</a>
+          <a href="#team">Team</a>
+          <a href="#contact">Contact</a>
+      </div>
+
+      <a href="#" class="logo">Mijn website</a>
+    </nav>
+  </div>
+
+
+
+</header>
+
+<main>
+<section id="info">
+
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet purus purus. In hac habitasse platea dict
+
+</section>
+
+<section id="foto">
+<h2>Foto</h2>
+
+</section>
+
+<section id="team">
+
+<h2>Team</h2>
+
+
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+
+<!-- Formulier settings -->
+		<div class="form-style-2">
+		<div class="form-style-2-heading">Vul het contact formulier in</div>
+		<form action="" method="post">
+
+<!-- veld voor naam -->
+		<label for="field1"><span>Naam <span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" /></label>
+<!-- veld voor email -->
+		<label for="field2"><span>Email <span class="required">*</span></span><input type="text" class="input-field" name="field2" value="" /></label>
+<!-- veld voor telefoon nr -->
+		<label><span>Telefoon nr</span>
+		<input type="text" class="tel-number-field" name="tel_no_1" value="+32" maxlength="4" />
+		-<input type="text" class="tel-number-field" name="tel_no_2" value="" maxlength="4"  />
+		-<input type="text" class="tel-number-field" name="tel_no_3" value="" maxlength="2"  />
+		-<input type="text" class="tel-number-field" name="tel_no_4" value="" maxlength="2"  />
+		-<input type="text" class="tel-number-field" name="tel_no_5" value="" maxlength="2"  />
+	</label>
+<!-- ******************** -->
+
+<!-- veld voor onderwerp nr -->
+		<label for="field4"><span>Onderwerp</span><select name="field4" class="select-field">
+		<option value="General Question">Algemeen</option>
+		<option value="Advertise">Reclame</option>
+		<option value="Partnership">informatie</option>
+		</select></label>
+<!-- ******************** -->
+
+<!-- veld voor bericht -->
+		<label for="field5"><span>Bericht <span class="required">*</span></span><textarea name="field5" class="textarea-field"></textarea></label>
+
+<!-- verzend knop -->
+		<label><span>&nbsp;</span><input type="submit" value="verzenden" /></label>
+		</form>
+		</div>
+
+</section>
+
+<section id="footer">
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-twitter"></a>
+  <a href="#" class="fa fa-google"></a>
+  <a href="#" class="fa fa-linkedin"></a>
+
+</section>
+
+</main>
+
+</body>
+
+
+</html>
